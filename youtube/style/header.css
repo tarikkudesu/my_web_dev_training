@@ -1,0 +1,118 @@
+.header {
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	background-color: white;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+.left-section {
+	display: flex;
+	align-items: center;
+
+	.hamburger-menu {
+		height: 20px;
+		margin: 0px 30px;
+	}
+
+	.youtube-logo {
+		height: 20px;
+	}
+}
+
+.middle-section {
+	flex: 1;
+	margin-left: 30px;
+	margin-right: 40px;
+	max-width: 500px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.search-bar {
+		width: 20px;
+		flex: 1;
+		height: 38px;
+		font-size: 14px;
+		padding-left: 20px;
+		color: black;
+		border-style: solid;
+		border-color: rgb(187, 187, 187);
+		border-width: 1px;
+		border-radius: 20px 0px 0px 20px;
+		box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+		font-family: Roboto, Arial;
+	}
+	
+	.search-bar::placeholder {
+		font-size: 16px;
+	}
+	
+	.search-button {
+		height: 40px;
+		width: 60px;
+		border-width: 1px 1px 1px 0px;
+		border-style: solid;
+		border-color: rgb(187, 187, 187);
+		padding-top: 3px;
+		border-radius: 0px 20px 20px 0px;
+	}
+	
+	.search-button:hover {
+		background-color: rgb(202, 202, 202);
+	}
+
+	.search-button:active {
+		background-color: rgb(186, 186, 186);
+	}
+
+	.search-icon {
+		width: 16px;
+	}
+	
+	.microphone-button {
+		background-color: rgb(239, 239, 239);
+		height: 40px;
+		width: 40px;
+		margin-left: 20px;
+		padding-top: 3px;
+		border: none;
+		border-radius: 20px;
+	}
+
+	.microphone-button:hover {
+		background-color: rgb(202, 202, 202);
+	}
+
+	.microphone-button:active {
+		background-color: rgb(186, 186, 186);
+	}
+	
+	.microphone-icon {
+		width: 16px;
+	}
+}
+
+.right-section {
+	width: 150px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px 30px 0px 0px;
+	column-gap: 10px;
+	.add-video {
+		width: 20px;
+	}
+	.bell {
+		width: 20px;
+	}
+	.channel-1 {
+		width: 30px;
+		border-radius: 15px;
+	}
+}
