@@ -11,12 +11,43 @@ body {
 .account-status {
 	height: 340px;
 	padding: 0px 20px 15px 20px;
-	background-image: url( ../img/ds.jpeg );
+	background-image: 		
+		linear-gradient(
+			to right bottom,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 44, 2, 0.6)),
+		url( ../img/ds.jpeg );
 	background-size: cover;
 	background-position: top;
 
 	.account-status-header {
 		height: 70px;
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+		column-gap: 10px;
+
+		.tribe {
+			font-family: Roboto, Arial;
+			font-size: 16px;
+			font-weight: 600;
+			color: darkgreen;
+		}
+
+		.name {
+			font-family: Roboto, Arial;
+			font-size: 18px;
+			font-weight: 600;
+			color: white;
+		}
+
+		.login {
+			font-family: Roboto, Arial;
+			font-size: 16px;
+			font-weight: 500;
+			color: white;
+		}
 	}
 
 	.account-info {
@@ -35,7 +66,7 @@ body {
 			border: none;
 			border-radius: 5px;
 			background-color: rgba(39, 39, 39, 0.9);
-			padding: 0px 20px;
+			padding: 0px 4%;
 		}
 
 		.account-info-1 {
