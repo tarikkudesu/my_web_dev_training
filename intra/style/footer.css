@@ -1,0 +1,22 @@
+
+footer {
+	height: 45px;
+	background-color: rgb(245, 245, 245);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+	font-family: Roboto, Arial;
+	
+	.policy-p:link,
+	.policy-p:visited {
+		color: rgb(129, 129, 129);
+		text-decoration: none;
+		padding: 0px 15px;
+		cursor: pointer;
+	}
+
+	.policy-p:hover {
+		text-decoration: underline;
+	}
+}

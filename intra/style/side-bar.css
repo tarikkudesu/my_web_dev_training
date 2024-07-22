@@ -1,7 +1,7 @@
 
 .side-bar {
 	width: 80px;
-	background-color: rgb(78 85 102);
+	background-color: rgb(41, 45, 57);
 	position: fixed;
 	display: flex;
 	flex-direction: column;
@@ -18,23 +18,25 @@
 		padding-top: 5px;
 
 		.top-section-icon-holder {
-			padding: 16px 0px;
+			padding: 22px 0px;
 			opacity: 0.4;
+			cursor: pointer;
 			transition: opacity 0.05s;
 		}
-
+		
 		.top-section-icon-holder:hover {
 			opacity: 1;
 		}
-
+		
 		.top-section-icon-holder-logo {
 			opacity: 1;
 		}
 	}
-
+	
 	.bottom-section-icon-holder {
 		padding: 15px 0px;
 		opacity: 0.4;
+		cursor: pointer;
 		transition: opacity 0.05s;
 	}
 
