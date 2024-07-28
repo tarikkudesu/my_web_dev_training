@@ -1,0 +1,107 @@
+:root {
+	--main-bg-color: rgb(240, 238, 241);
+	--theme-color: rgb(237, 134, 65);
+}
+
+body {
+	background-color: var(--main-bg-color);
+	overflow: hidden;
+}
+
+.container {
+	margin-left: 6%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.title {
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 80px;
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.bar {
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 4px;
+	height: 4px;
+	width: 40px;
+	display: inline-block;
+	background-color: rgb(180, 180, 180);
+	vertical-align: top;
+}
+
+.sub-title-text {
+	display: inline-block;
+	margin-left: 10px;
+	width: 240px;
+	font-size: 12px;
+	font-family: Roboto, Arial;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: rgb(180, 180, 180);
+}
+
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	width: 240px;
+	height: 50px;
+	border: none;
+	border-radius: 25px;
+	background-color: var(--theme-color);
+	color: white;
+	font-size: 14px;
+	font-family: Roboto, Arial;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.2s;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 1px 6px rgba(186, 76, 3, 0.2);
+}
+
+.button:hover {
+	transform: translate(-50%, calc(-50% - 6px));
+	box-shadow: 0px 5px 10px rgba(186, 76, 3, 0.4);
+}
+
+.button:active {
+	transform: translate(-50%, calc(-50% - 3px));
+	box-shadow: 0px 4px 8px rgba(186, 76, 3, 0.2);
+}
+
+.main-image {
+	position: absolute;
+	height: 60%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: transform 2s ease-in-out;
+}
+
+.animate {
+	animation: RotateIn .5s ease-in-out;
+}
+
+@keyframes RotateIn {
+	0% {
+		transform: translate(-50%, -50%) rotate(90deg) scale(0.6);
+	}
+	80% {
+		transform: translate(-50%, -50%) rotate(-10deg) scale(1.1);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg) scale(1);
+	}
+}

@@ -1,0 +1,72 @@
+header {
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+}
+
+.right-section,
+.left-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+.logo {
+	height: 25px;
+	margin-left: 60px;
+}
+
+.brand {
+	transform: translateY(5px);
+	margin-left: 4px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	color: black;
+	font-family: Roboto, Arial;
+	
+	.brand-x {
+		color: var(--theme-color);
+	}
+}
+
+.shop-card {
+	height: 25px;
+	margin-right: 60px;
+	margin-left: 20px;
+	transition: opacity 0.2s;
+	cursor: pointer;
+	opacity: .5;
+}
+
+.shop-card:hover {
+	opacity: 1;
+}
+
+.header-page {
+	font-size: 16px;
+	margin: 0px 30px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: rgb(150, 150, 150);
+	font-family: Roboto, Arial;
+	transition: opacity 0.2s;
+	opacity: .5;
+}
+
+.header-page:hover {
+	opacity: 1;
+}
+
+.lunch {
+	font-weight: 600;
+	color: black;
+	opacity: 1;
+}
